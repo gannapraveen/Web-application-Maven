@@ -9,15 +9,15 @@ pipeline {
         stage("validate") {
             
             steps {
-                //echo "validating the code"
-               // bat "mvn validate"
+                echo "validating the code"
+                bat "mvn validate"
             }
         }
         
         stage("compile") {
             
             steps {
-                #echo "compiling the code"
+                echo "compiling the code"
                 bat "mvn compile"
             }
         }
